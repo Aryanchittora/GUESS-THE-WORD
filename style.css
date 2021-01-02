@@ -1,0 +1,24 @@
+body {
+    background-image: url("Login page.gif");
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+input {
+    display: inline-block;
+    margin: 5px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+.container {
+    display: flex;
+}
+center {
+    margin-left: 200px;
+}
