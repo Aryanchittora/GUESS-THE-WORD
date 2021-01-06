@@ -1,8 +1,8 @@
 var player1_name = localStorage.getItem("Player_1");
 var player2_name = localStorage.getItem("Player_2");
 
-var player1_score = 0;
-var player2_score = 0;
+player1_score = 0;
+player2_score = 0;
 
 document.getElementById("player_1_name").innerHTML = player1_name + " : ";
 document.getElementById("player_2_name").innerHTML = player2_name + " : ";
@@ -14,8 +14,8 @@ document.getElementById("player_question").innerHTML = "Question Turn - " + play
 document.getElementById("player_answer").innerHTML = "Answer Turn - " + player2_name;
 
 function send() {
-  var get_word = document.getElementById("word").value;
-  var word = get_word.toLowerCase();
+  get_word = document.getElementById("word_question").value;
+  word = get_word.toLowerCase();
   console.log("word in lower case = " + word);
 
   var charAt_1 = word.charAt(1);
@@ -40,7 +40,7 @@ function send() {
   var column = Question + input + button;
   
   document.getElementById("output").innerHTML = column;
-  document.getElementById("word").value = "";
+  document.getElementById("word_question").value = "";
 }
 
 var question_turn = "Player_1";
